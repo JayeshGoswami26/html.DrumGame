@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #61677A;
+    color: #FFF6E0;
+}
+.box-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.logo{
+    width: 15%;
+}
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.heading{
+    font-size: 70px;
+}
+.box2{
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px ;
+}
+.box-mini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272829;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-weight: 900;
+    font-size: 35px;
+    box-shadow: 10px 15px 10px #D8D9DA;
+    cursor: pointer;
+}
+.box-mini::after{
+    box-shadow: 15px 20px 20px #D8D9DA;
+}
+.footer{
+    margin-top: 70px;
+    /* background-color: #D8D9DA; */
+}
+.A{
+    background-image: url(IMG/tom1.png);
+}
+
+.S{
+    background-image: url(IMG/tom2.png);
+}
+.D{
+    background-image: url(IMG/tom3.png);
+}
+.F{
+    background-image: url(IMG/tom4.png);
+}
+.G{
+    background-image: url(IMG/crash.png);
+    color: black;
+}
+.H{
+    background-image: url(IMG/snare.png);
+    color: black;
+}
+.J{
+    background-image: url(IMG/kick.png);
+}
+
+@media (max-width:450px)  {
+    .box-main{
+        padding: 100px;
+    }
+    .logo{
+        width: 70%;
+        height: 70%;
+    }
+    .heading{
+        font-size:20px ;
+    }
+    .box-mini{
+        width: 100px;
+        height: 100px;
+    }
+    .box2{
+        flex-direction: column;
+    }
+}
